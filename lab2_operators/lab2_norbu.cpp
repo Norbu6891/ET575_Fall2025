@@ -71,7 +71,38 @@ int main() {
     int n = 5;
     float m = n/2.0;
     cout<<"implicit casting = "<<m<<endl;
-    return 0;
-
+    
     cout<<"\n----- EXERCISE ------ "<<endl;
+
+    cout<<" \n-----  LAB 2 HW STARTS ----- "<<endl;
+
+    int a, b;
+    cout<<"\nEnter the first number (a): ";
+    cin>>a;
+
+    cout<<"Enter the second number (b): ";
+    cin>>b;
+
+    cout<<"\nArithmetic Operations: "<<endl;
+    cout<<"a + b = "<<(a+b)<<endl;
+    cout<<"a - b = "<<(a-b)<<endl;
+    cout<<"a * b = "<<(a*b)<<endl;
+    cout<<"a / b = "<<(a/b)<<endl;
+    cout<<"a % b = "<<(a%b)<<endl;
+
+    cout<<"\nAfter assignment operations: "<<endl;
+    a += 10;
+    b -= 5;
+    cout<<"a = "<<a<<endl;
+    cout<<"b = "<<b<<endl;
+    
+    cout<<"\nBoolean Operations: "<<endl;
+    cout<<"Is a greater than b? "<<(a > b)<<endl;
+    cout<<"Is a eqaul to b? "<<(a == b)<<endl;
+    cout<<"is a not equal to b? "<<(a != b)<<endl;
+    cout<<"Are both a and b positive? "<<(a > 0 && b > 0)<<endl;
+    cout<<"Is either a or b negative? "<<(a < 0 or b < 0)<<endl;
+    cout<<"Is a not greater than b? "<<(a < b)<<endl;
+    
+    return 0;
 }
