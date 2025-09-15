@@ -52,6 +52,7 @@ int main() {
     cout<<"\n ----- LAB Exercise ----- "<<endl;
     string word = "";
     cout<<"Enter a message: ";
+    // entering message as 'rhinoceros'
     cin>>word;
 
     cout<<"10th character: "<<word[9]<<endl;
