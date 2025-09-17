@@ -132,14 +132,27 @@ int main() {
     int savings;
     cout<<"How much is your savings?"<<endl;
     cin>>savings;
-    if(savings>0 && savings<199,999){
+    if(savings > 0 && savings <= 199999){
         cout<<"Keep saving!"<<endl;
     }
-    else if(savings>200000 && savings<500000) {
-        cout<<"With "<<savings<<" you can afford an apartment or co-op"<<endl;
+    else if(savings >= 200000 && savings <= 500000) {
+        if(savings >= 200000 && savings <= 300000) {
+            cout<<"With "<<savings<<" you can afford an apartment or co-op with  a studio"<<endl;
+        }
+        else if(savings >= 300001 && savings <= 400000) {
+            cout<<"With "<<savings<<" you can afford an apartment or co-op with  one bedroom and one bathroom"<<endl;
+        }
+        else {
+            cout<<"With "<<savings<<" you can afford an apartment or co-op with  two bedrooms and one bathroom"<<endl;
+        }
     }
-    else if(savings>500001 && savings<1000000) {
-        cout<<"With "<<savings<<" you can afford a house"<<endl;
+    else if(savings >= 500001 && savings <= 1000000) {
+        if(savings >= 500001 && savings <= 700000) {
+            cout<<"With "<<savings<<" you can afford a house with  two bedrooms and two bathrooms"<<endl;
+        }
+        else {
+            cout<<"With "<<savings<<" you can afford a house with  three bedrooms and three bathrooms"<<endl;
+        }
     }
     else if(savings>=1000001) {
         cout<<"With "<<savings<<" you can afford a mansion"<<endl;
@@ -148,6 +161,30 @@ int main() {
         cout<<"Have some savings!"<<endl;
 
 
+    cout<<"\n ------ Exercise 2 -----"<<endl;
+    char twice = ' ';
+    int num = 0;
+    cout<<"\nEnter a number: ";
+    cin>>num;
+    cout<<"If you want "<<num<<" doubled, type 'Y' or 'y' for yes or 'N' or 'n' for no: ";
+    cin>>twice;
+    
+    
+    switch (twice)
+    {
+        case 'Y':case 'y':
+        num *= 2;
+        cout<<"The number is set to "<<num<<endl;
+        break;
+
+        case 'N':case 'n':
+        cout<<"The number is set to "<<num<<endl;
+        break;
+
+        default:
+        num = 0;
+        cout<<"The number is set to "<<num<<endl;
+        }
 
     return 0;
 }
