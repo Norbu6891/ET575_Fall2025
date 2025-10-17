@@ -55,11 +55,26 @@ int main() {
         for(int col = 1; col <= dimension; col++)
         {
             if((4 >= col && col >= 3 && 8 >= row && row >= 3) || (col >= 5 && col <= 6 && row >= 5 && row <= 6) || (col >= 7 && col <= 8 && row >= 3 && row <= 8))
-            
+                cout<<" % ";
+            else
+                cout<<" . ";
         }
+        cout<<endl;
     }
+    cout<<"\n------ EXERCISE a-----"<<endl;
+    int sum=0, count=0;
+    for (int n = 20; n> 0; n-=2){
+        if (n%3 ==0){
+            count++;
+            continue;
+        }
+        sum += n;
+
+    }
+    cout<<"The sum is: "<<sum<<endl<<"The count is: "<<count<<endl;
+    
     cout<<"\n------ EXERCISE b-----"<<endl;
-    i = 0;
+    int i = 0;
     int add = 0;
     while(i<=10) {
         i++;
@@ -68,6 +83,7 @@ int main() {
         }
         else{continue;}
         add += i;
+    
     }
     cout<<"Add = "<<add<<endl;
 
