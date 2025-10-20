@@ -74,7 +74,7 @@ int main() {
     cout<<"The sum is: "<<sum<<endl<<"The count is: "<<count<<endl;
     
     cout<<"\n------ EXERCISE b-----"<<endl;
-    int i = 0;
+    i = 0;
     int add = 0;
     while(i<=10) {
         i++;
