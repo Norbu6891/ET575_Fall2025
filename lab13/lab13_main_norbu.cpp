@@ -28,8 +28,8 @@ int main(){
     int run1 = random_1_6();// call function that generates a number between 1 and 6
     int run2 = random_1_6(); 
 
-    cout<<"run1 = "<<run1<<endl;
-    cout<<"run2 = "<<run2<<endl;
+    // cout<<"run1 = "<<run1<<endl;
+    // cout<<"run2 = "<<run2<<endl;
 
     // call function to check for snake_eyes
     bool result = compare_ones(run1, run2);

@@ -36,16 +36,19 @@ int random_1_6(){
     return rand()%7;
 }
 
-//function to compare if two numbers are 1s
+// function to compare if two numbers are 1s
 bool compare_ones(int r1, int r2){
-    if result == 1;
-        return 1;
+    if(r1 == 1 && r2 == 2)
+        return true;
     else
-        return 0;
-
-}
-
+        return false;
+    }
+    
 // function to prompt result
 void printresult(bool result){
+    if (result) 
+        cout<<"Congrats, you got snakeeyes! "<<endl;
+    else
+        cout<<"Better luck next time!"<<endl;
 
 }
