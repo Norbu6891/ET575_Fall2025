@@ -1,0 +1,34 @@
+/*
+Tenzing Norbu
+Nov 12, 2025
+lab 14: intro to array, pointers and references
+*/
+#include<iostream>
+using namespace std;
+
+#include "lab15_function_norbu.cpp"
+
+int main(){
+    cout<<"\n----- Example 1: pointers -----"<<endl;
+    pointer_ref();
+
+    cout<<"\n----- Example 2: pointers and reference in a funciton -----"<<endl;
+    string something = "Hello World!";
+    printvalue(something);
+    printbyreference(something);
+    printaddress(&something);
+
+    cout<<"\n----- Example 3: array -----"<<endl;
+    arrays();
+
+    cout<<"\n----- Example 4: array sizes -----"<<endl;
+    sizeofarrays();
+
+    cout<<"\n----- Example 5: loop in an array  -----"<<endl;
+    looparray();
+
+    cout<<"\n----- Exercise: lab 15 - intro to array"<<endl;
+    exercise();
+    
+    return 0;
+}
